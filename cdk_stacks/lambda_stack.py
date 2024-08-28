@@ -49,7 +49,7 @@ class SageMakerEFSCleanerLambdaStack(Stack):
 
     lambda_fn_target = aws_events_targets.LambdaFunction(efs_cleaner_lambda_fn)
     aws_events.Rule(self, "ScheduleRule",
-      schedule=aws_events.Schedule.cron(minute="10"),
+      schedule=aws_events.Schedule.cron(hour="19", minute="10"),
       targets=[lambda_fn_target]
     )
 
