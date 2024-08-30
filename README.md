@@ -3,6 +3,13 @@
 
 This is a CDK Python project for cleanning up the EFS that are no longer in use by SageMaker domains.
 
+### Before
+![before-sagemaker-efs-deletion](./assets/before-sagemaker-efs-deletion.png)
+
+### After
+![after-sagemaker-efs-deletion](./assets/after-sagemaker-efs-deletion.png)
+
+
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 This project is set up like a standard Python project.  The initialization
